@@ -9,10 +9,10 @@ This application is created to test out different different parts of Android pro
 The idea for this application is based on the Android example project:
 https://github.com/codepath/android-contacts-loader-demo
 
-##Technical Details
-Kotlin: 1.1.2-4
-Target JVM: 1.6
-Compile SDK: 25
-Build Tools: 25.0.3
-JUnit: 4.12
-Espresso 2.2.2
+## Technical Details
+- Kotlin: 1.1.2-4
+- Target JVM: 1.6
+- Compile SDK: 25
+- Build Tools: 25.0.3
+- JUnit: 4.12
+- Espresso 2.2.2
