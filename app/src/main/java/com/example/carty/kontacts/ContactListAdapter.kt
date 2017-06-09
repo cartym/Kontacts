@@ -5,7 +5,9 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.BaseAdapter
+import android.widget.ImageView
 import android.widget.TextView
+import org.w3c.dom.Text
 
 /**
  * Created by caitlinmartins on 2017-06-08.
@@ -43,13 +45,17 @@ open class ContactListAdapter(contacts: Array<Contact>, context: Context): BaseA
             vh = view.tag as ListRowHolder
 
         }
-        vh.label.text = localContacts[position].name
+
+        val currentContact = localContacts[position]
+        vh.nameLabel.text = currentContact.name
+        vh.phoneNumberLabel.text = currentContact.phoneNumber.toString()
+
         return view
     }
 
     private class ListRowHolder(row: View?) {
-        var localRow = row
-        public val label = localRow?.findViewById(R.id.nameTextView) as TextView
-
+        val nameLabel: TextView = row?.findViewById(R.id.nameTextView) as TextView
+        val phoneNumberLabel: TextView = row?.findViewById(R.id.numberTextView) as TextView
+        val contactImage: ImageView = row?.findViewById(R.id.contactImageView) as ImageView
     }
 }
