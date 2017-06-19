@@ -12,8 +12,8 @@ class MainActivity : AppCompatActivity() {
         setContentView(R.layout.activity_main)
 
         val testContacts = arrayOf(
-                Contact("test name", 2042222222, "test@gmail.com", "01-01-2017"),
-                Contact("bob bobby", 2041111111, "cats@gmail.com", "02-02-2017")
+                Contact("test name", arrayOf(2042222222), arrayOf("test@gmail.com"), "01-01-2017"),
+                Contact("bob bobby", arrayOf(2041111111), arrayOf("cats@gmail.com"), "02-02-2017")
         )
 
         val listView = findViewById(R.id.contactsListView) as ListView

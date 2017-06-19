@@ -48,7 +48,7 @@ open class ContactListAdapter(contacts: Array<Contact>, context: Context): BaseA
 
         val currentContact = localContacts[position]
         vh.nameLabel.text = currentContact.name
-        vh.phoneNumberLabel.text = currentContact.phoneNumber.toString()
+        vh.phoneNumberLabel.text = currentContact.phoneNumber[0].toString()
 
         return view
     }
